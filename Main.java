@@ -1,5 +1,7 @@
 public class Main{
     public static void main(String[] args){
-        System.out.println("Hello, Fucker");
+        String firstName = "James", lastName = "Owusu",  fullName = firstName + " " + lastName;
+        
+        System.out.println(fullName);
     }
 }
