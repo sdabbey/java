@@ -74,9 +74,17 @@ public class Main{
         */
         
         //Array Loop
+        /*
         String[] cars = {"Volvo", "BMW", "Benz"};
         for(int i=0; i < cars.length; i++){
             System.out.println(cars[i]);
+        }
+        */
+
+        //Looping through Arrays with for-each loop
+        String[] cars = {"Volvo", "BMW", "Benz"};
+        for(String i : cars){
+            System.out.println(i);
         }
     }
 }
