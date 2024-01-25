@@ -22,7 +22,7 @@ public class Main{
 
 
         //Switch 
-        
+        /* 
         int day = 3;
         switch (day) {
             case 1:
@@ -50,7 +50,8 @@ public class Main{
             default:
                 break;
         }
-       
+        */    
+
         //For-Each loop
         /* 
         String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
@@ -60,6 +61,7 @@ public class Main{
         */
 
         //Continue and Break
+        /* 
         int i = 0;
         while (i < 10){
             if(i == 4){
@@ -68,6 +70,13 @@ public class Main{
             }
             System.out.println(i);
             i++;
+        }
+        */
+        
+        //Array Loop
+        String[] cars = {"Volvo", "BMW", "Benz"};
+        for(int i=0; i < cars.length; i++){
+            System.out.println(cars[i]);
         }
     }
 }
