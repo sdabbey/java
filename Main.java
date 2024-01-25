@@ -50,7 +50,25 @@ public class Main{
             default:
                 break;
         }
+        */    
+
+        //For-Each loop
+        /* 
+        String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+        for (String i : cars){
+            System.out.println(i);
+        }
         */
 
+        //Continue and Break
+        int i = 0;
+        while (i < 10){
+            if(i == 4){
+                i++;
+                continue;
+            }
+            System.out.println(i);
+            i++;
+        }
     }
 }
