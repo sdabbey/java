@@ -22,7 +22,7 @@ public class Main{
 
 
         //Switch 
-        /* 
+        
         int day = 3;
         switch (day) {
             case 1:
@@ -50,8 +50,7 @@ public class Main{
             default:
                 break;
         }
-        */    
-
+       
         //For-Each loop
         /* 
         String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
