@@ -10,8 +10,10 @@ public class Main{
         boolean isJavaFun = true;
         boolean isFishTasty = false;
 
-        System.out.println(isJavaFun);
-        System.out.println(isFishTasty);
+        String javaResult = (isFishTasty) ? "Fish is tasty" : "Fish is not tasty";
+        String fishResult = (isJavaFun) ? "Java is fun" : "Java is not fun";
+        System.out.println(javaResult);
+        System.out.println(fishResult);
         System.out.println(myDouble);   // Outputs 9.78
         System.out.println(myInt);      // Outputs 9
 
