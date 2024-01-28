@@ -1,4 +1,8 @@
 public class Main{
+
+    static void myMethod(String fname){
+        System.out.println(fname + " Refsnes");
+    }
     public static void main(String[] args){
      
         /*
@@ -82,9 +86,16 @@ public class Main{
         */
 
         //Looping through Arrays with for-each loop
+        /* 
         String[] cars = {"Volvo", "BMW", "Benz"};
         for(String i : cars){
             System.out.println(i);
         }
+        */
+
+        myMethod("Liam");
+        myMethod("Jenny");
+       
+
     }
 }
