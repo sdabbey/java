@@ -1,10 +1,16 @@
 public class Main{
 
-    static void myMethod(String fname, int age){
-        System.out.println(fname + " is " + age);
+    static int addNumbers(int x, int y){
+        return x + y;
     }
+
+    static double addNumbers(double x, double y){
+        return x + y;
+    }
+
+
     public static void main(String[] args){
-     
+    
         /*
         double myDouble = 9.782345456d;
         float myInt = (float) myDouble; // Manual casting: double to int
@@ -93,8 +99,10 @@ public class Main{
         }
         */
 
-        myMethod("Liam", 5);
-        myMethod("Jenny", 25);
+        
+        //Method Overloading
+        System.out.println(addNumbers(4, 6));
+        System.out.println(addNumbers(4.2, 0.523));
        
 
     }
