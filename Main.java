@@ -93,7 +93,7 @@ public class Main{
         }
         
 
-        */
+        
         //Method Overloading
 
         int myNum1 = addNumbers(4, 6);
@@ -101,6 +101,20 @@ public class Main{
         System.out.println("Integer: " + myNum1);
         System.out.println("Double: " + myNum2);
        
+        */
+        
+        //Recursion
 
+        int result = sum(10);
+        System.out.println(result);
+
+    }
+
+    static int sum(int k){
+        if(k>0){
+            return k + sum(k-1);
+        }else{
+            return 0;
+        }
     }
 }
