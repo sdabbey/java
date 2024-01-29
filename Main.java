@@ -102,17 +102,16 @@ public class Main{
         System.out.println("Double: " + myNum2);
        
         */
-        
-        //Recursion
 
-        int result = sum(10);
+        //Recursion - Note, recursion is a very efficient and mathematically-elegant approach to programming
+        int result = sum(5, 15);
         System.out.println(result);
 
     }
 
-    static int sum(int k){
-        if(k>0){
-            return k + sum(k-1);
+    static int sum(int start, int end){
+        if(end > start){
+            return end + sum(start, end-1);
         }else{
             return 0;
         }
