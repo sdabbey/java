@@ -11,16 +11,10 @@ public class Main{
 
     public static void main(String[] args){
     
-        /*
-        double myDouble = 9.782345456d;
-        float myInt = (float) myDouble; // Manual casting: double to int
-
-        System.out.println(myDouble);   
-        System.out.println(myInt);   
-        */
-
-        //Using ternary operator as and if...else shorthand    
         /* 
+       
+        //Using ternary operator as and if...else shorthand    
+       
         boolean isJavaFun = true;
         boolean isFishTasty = false;
         
@@ -28,11 +22,11 @@ public class Main{
         String fishResult = (isJavaFun) ? "Java is fun" : "Java is not fun";
         System.out.println(javaResult);
         System.out.println(fishResult);
-        */
+        
 
 
         //Switch 
-        /* 
+         
         int day = 3;
         switch (day) {
             case 1:
@@ -60,18 +54,18 @@ public class Main{
             default:
                 break;
         }
-        */    
+            
 
         //For-Each loop
-        /* 
+         
         String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
         for (String i : cars){
             System.out.println(i);
         }
-        */
+        
 
         //Continue and Break
-        /* 
+         
         int i = 0;
         while (i < 10){
             if(i == 4){
@@ -81,28 +75,31 @@ public class Main{
             System.out.println(i);
             i++;
         }
-        */
+        
         
         //Array Loop
-        /*
+        
         String[] cars = {"Volvo", "BMW", "Benz"};
         for(int i=0; i < cars.length; i++){
             System.out.println(cars[i]);
         }
-        */
+        
 
         //Looping through Arrays with for-each loop
-        /* 
+         
         String[] cars = {"Volvo", "BMW", "Benz"};
         for(String i : cars){
             System.out.println(i);
         }
-        */
-
         
+
+        */
         //Method Overloading
-        System.out.println(addNumbers(4, 6));
-        System.out.println(addNumbers(4.2, 0.523));
+
+        int myNum1 = addNumbers(4, 6);
+        double myNum2 = addNumbers(4.2, 0.523);
+        System.out.println("Integer: " + myNum1);
+        System.out.println("Double: " + myNum2);
        
 
     }
