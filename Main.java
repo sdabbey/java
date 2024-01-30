@@ -1,5 +1,7 @@
-public class Main{
+import java.util.Scanner;
 
+public class Main{
+    /* 
     static int addNumbers(int x, int y){
         return x + y;
     }
@@ -8,7 +10,15 @@ public class Main{
         return x + y;
     }
 
-
+    static int sum(int start, int end){
+        if(end > start){
+            return end + sum(start, end-1);
+        }else{
+            return 0;
+        }
+    }
+    */
+    
     public static void main(String[] args){
     
         /* 
@@ -101,19 +111,24 @@ public class Main{
         System.out.println("Integer: " + myNum1);
         System.out.println("Double: " + myNum2);
        
-        */
-
+        
         //Recursion - Note, recursion is a very efficient and mathematically-elegant approach to programming
         int result = sum(5, 15);
         System.out.println(result);
 
+        */
+
+        Scanner ameyeduwaa = new Scanner(System.in);
+        System.out.println("Enter Username: ");
+
+        String userName = ameyeduwaa.nextLine();
+        System.out.println("Username is: " + userName);
+
+
+
     }
 
-    static int sum(int start, int end){
-        if(end > start){
-            return end + sum(start, end-1);
-        }else{
-            return 0;
-        }
-    }
+
 }
+
+
