@@ -22,7 +22,7 @@ public class Main{
     
     public static void main(String[] args){
     
-    
+        /*
        
         //Using ternary operator as and if...else shorthand    
        
@@ -112,17 +112,19 @@ public class Main{
         System.out.println("Integer: " + myNum1);
         System.out.println("Double: " + myNum2);
        
-        
+    
+
         //Recursion - Note, recursion is a very efficient and mathematically-elegant approach to programming
         int result = sum(5, 15);
         System.out.println(result);
 
    
+        */
 
-        Scanner ameyeduwaa = new Scanner(System.in);
+        Scanner ameyeDuwaa = new Scanner(System.in);
         System.out.println("Enter Username: ");
 
-        String userName = ameyeduwaa.nextLine();
+        String userName = ameyeDuwaa.nextLine();
         System.out.println("Username is: " + userName);
 
 
