@@ -21,7 +21,7 @@ public class Main{
     
     public static void main(String[] args){
     
-        /* 
+    
        
         //Using ternary operator as and if...else shorthand    
        
@@ -116,7 +116,7 @@ public class Main{
         int result = sum(5, 15);
         System.out.println(result);
 
-        */
+   
 
         Scanner ameyeduwaa = new Scanner(System.in);
         System.out.println("Enter Username: ");
