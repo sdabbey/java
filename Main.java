@@ -1,4 +1,4 @@
-import java.util.Scanner;
+//import java.util.Scanner;
 
 public class Main{
     
@@ -20,6 +20,7 @@ public class Main{
     }
     */
     
+    int x = 5;
     public static void main(String[] args){
     
         /*
@@ -119,15 +120,20 @@ public class Main{
         System.out.println(result);
 
    
-        */
-
+        
+        //Accepting User inputs
         Scanner ameyeDuwaa = new Scanner(System.in);
         System.out.println("Enter Username: ");
 
         String userName = ameyeDuwaa.nextLine();
         System.out.println("Username is: " + userName);
 
+        */
 
+
+        //Object Oriented Programming
+        Second secondObj = new Second();
+        System.out.println(secondObj.name);
 
     }
 
