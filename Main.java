@@ -18,9 +18,19 @@ public class Main{
             return 0;
         }
     }
-    */
+    
     
     int x = 5;
+
+    */
+    
+    static void myStaticMethod(){
+        System.out.println("Static methods can be called without creating objects");
+    }
+
+    public void myPublicMethod(){
+        System.out.println("Public methods must be called by creating objects");
+    }
     public static void main(String[] args){
     
         /*
@@ -128,13 +138,18 @@ public class Main{
         String userName = ameyeDuwaa.nextLine();
         System.out.println("Username is: " + userName);
 
-        */
+        
 
 
         //Object Oriented Programming
         Second secondObj = new Second();
         System.out.println(secondObj.name);
 
+        */
+
+        myStaticMethod();
+        Main myObj = new Main();
+        myObj.myPublicMethod();
     }
 
 
