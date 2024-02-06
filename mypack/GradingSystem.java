@@ -55,5 +55,8 @@ public class GradingSystem {
             System.out.println(studentNames[j] + " with index number " + studentIndexNumber[j] + " got grade " + studentGrade[j]);
             System.out.println("\n");
         }
+
+        sizeInput.close();
+        
     }
 }
