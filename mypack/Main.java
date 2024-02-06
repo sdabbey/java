@@ -1,5 +1,5 @@
 //import java.util.Scanner;
-
+package mypack;
 public class Main{
     
     /*
