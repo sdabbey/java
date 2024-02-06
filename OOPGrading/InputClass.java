@@ -31,7 +31,7 @@ public class InputClass {
             System.out.println("\n");
         }
 
-        
+        input.close();
         
 
     }    
