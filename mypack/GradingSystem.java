@@ -57,6 +57,6 @@ public class GradingSystem {
         }
 
         sizeInput.close();
-        
+        detailInput.close();
     }
 }
