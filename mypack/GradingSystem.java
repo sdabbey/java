@@ -3,46 +3,46 @@ import java.util.Scanner;
 public class GradingSystem {
     public static void main(String[] args) {
         System.out.println("Enter class size:");
-        Scanner sizeInput = new Scanner(System.in);
-        int classSize = sizeInput.nextInt();
+        Scanner input = new Scanner(System.in);
+        int classSize = input.nextInt();
 
         System.out.println("Enter student details in the format; Name, Index Number and Score");
 
         String [] studentNames = new String[classSize];
-        Double [] studentScore = new Double[classSize];
-        int [] studentIndexNumber = new int[classSize];
-        char [] studentGrade = new char[classSize];
+        Double [] studentScores = new Double[classSize];
+        int [] studentIndexNumbers = new int[classSize];
+        char [] studentGrades = new char[classSize];
 
-        Scanner detailInput = new Scanner(System.in); 
+         
 
         for(int i=0; i<classSize; i++){
             System.out.print("Enter the student name: ");
-            studentNames[i] = detailInput.next();
+            studentNames[i] = input.next();
 
             System.out.print("Enter the student index number: ");
-            studentIndexNumber[i] = detailInput.nextInt();
+            studentIndexNumbers[i] = input.nextInt();
 
             System.out.print("Enter the student score: ");
-            studentScore[i] = detailInput.nextDouble();
+            studentScores[i] = input.nextDouble();
 
-            double score = studentScore[i];
+            double score = studentScores[i];
             if(score >= 70){
-                studentGrade[i] = 'A';
+                studentGrades[i] = 'A';
             }
             else if(score >=60){
-                studentGrade[i] = 'B';
+                studentGrades[i] = 'B';
             }
             else if(score >=55){
-                studentGrade[i] = 'C';
+                studentGrades[i] = 'C';
             }
             else if(score >=50){
-                studentGrade[i] = 'D';
+                studentGrades[i] = 'D';
             }
             else if(score >=40){
-                studentGrade[i] = 'E';
+                studentGrades[i] = 'E';
             }
             else{
-                studentGrade[i] = 'F';
+                studentGrades[i] = 'F';
             }
             
             System.out.println("\n");
@@ -52,11 +52,11 @@ public class GradingSystem {
         
         System.out.println("Student Math Test Results: ");
         for(int j=0; j<classSize; j++){
-            System.out.println(studentNames[j] + " with index number " + studentIndexNumber[j] + " got grade " + studentGrade[j]);
+            System.out.println(studentNames[j] + " with index number " + studentIndexNumbers[j] + " got grade " + studentGrades[j]);
             System.out.println("\n");
         }
 
-        sizeInput.close();
-        detailInput.close();
+        input.close();
+       
     }
 }
