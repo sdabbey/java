@@ -1,4 +1,4 @@
-package assignment;                            
+// package assignment;                            
 import java.util.Scanner;
 public class GradingSystem {
     Boolean pass_req_one = false;
