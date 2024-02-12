@@ -1,9 +1,9 @@
-// Helena Ntibim - 3371822
-
+// Winifred Anokye - 3371822
+package assignment;
 import java.util.Scanner;
 
 
-public class Standard_deviation {
+public class StandardDeviation {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         
