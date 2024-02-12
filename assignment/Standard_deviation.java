@@ -1,6 +1,5 @@
-// Caleb Gyamera Charles - 3392822
-package assignment;
-import java.util.Arrays;
+// Helena Ntibim - 3371822
+
 import java.util.Scanner;
 
 
@@ -37,27 +36,30 @@ public class Standard_deviation {
         }
         
         System.out.println("List Of First Even Integers between 0 and 20 : ");
-        System.out.println((Arrays.toString(integer_array)));
+        for(int val = 0; val<integer_array.length; val++){
+            
+            System.out.print(integer_array[val] + ", " );
+        }
         System.out.print("\n" );
 
 
         //Standard Deviation Calculation
 
-        double standardDev, mean,  sumDeviation;
+        double standardDev, mean,  summation;
         int sum = 0;
         for(int j=0; j<integer_array.length; j++){
             sum = sum + integer_array[j];
         }
         //Mean Calculation
         mean =  (sum / integer_array.length);
-        sumDeviation = 0;
+        summation = 0;
 
         //Mean Deviation Calculation
         for(int k=0; k<integer_array.length; k++){
-            sumDeviation +=  (Math.pow(integer_array[k] - mean, 2));
+            summation +=  (Math.pow(integer_array[k] - mean, 2));
         }
 
-        standardDev = Math.sqrt(sumDeviation/integer_array.length);
+        standardDev = Math.sqrt(summation/integer_array.length);
 
 
         System.out.println("\n");
