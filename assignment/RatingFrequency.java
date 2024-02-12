@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class RatingFrequency {
     public static void main(String[] args) {
-     //int [] responses = {1,2,5,4,3,5,2,1,3,3,1,4,3,2,5,3,4,5,3,1};
+    
 
         int [] responses = new int[20];
         Scanner input = new Scanner(System.in);

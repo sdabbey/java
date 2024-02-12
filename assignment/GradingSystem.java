@@ -25,8 +25,6 @@ public class GradingSystem {
         //Condition for Fee Status
         if(fee_amount == 100){
             mainObj.paid_full_fees = true;
-        }else{
-            mainObj.paid_full_fees = false;
         }
 
         //Condition for Requirement One
