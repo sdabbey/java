@@ -16,7 +16,7 @@ public class StandardDeviation {
         
         for(i=0; i<10; i++){
             int inputValue = input.nextInt();
-
+           
             if (inputValue % 2 != 0 || inputValue > 20 || inputValue < 1) {
                 if (inputValue % 2 != 0) {
                     System.out.println("Enter an even integer: ");
@@ -35,6 +35,8 @@ public class StandardDeviation {
             intArray[i] = inputValue;
             
         }
+        
+        input.close();
         
         System.out.println("List Of First Even Integers between 0 and 20 : " + "\n");
         System.out.println(Arrays.toString(intArray));
@@ -64,7 +66,7 @@ public class StandardDeviation {
         System.out.println("Standard deviation of the 10 integers is  " + standardDev);
 
         System.out.println("\n");
-        input.close();
+        
     }
 
 }
