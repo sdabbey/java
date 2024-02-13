@@ -1,7 +1,7 @@
-// Winifred Anokye - 3371822
+// Winifred Anokye - 3359322
 package assignment;
-import java.util.Scanner;
-
+import java.util.Scanner;  
+import java.util.Arrays;
 
 public class StandardDeviation {
     public static void main(String[] args) {
@@ -31,15 +31,13 @@ public class StandardDeviation {
                 
                 
             }
-            integer_array[i] = inputValue;
             System.out.println("Enter the next even integer: ");
+            integer_array[i] = inputValue;
+            
         }
         
-        System.out.println("List Of First Even Integers between 0 and 20 : ");
-        for(int val = 0; val<integer_array.length; val++){
-            
-            System.out.print(integer_array[val] + ", " );
-        }
+        System.out.println("List Of First Even Integers between 0 and 20 : " + "\n");
+        System.out.println(Arrays.toString(integer_array));
         System.out.print("\n" );
 
 
