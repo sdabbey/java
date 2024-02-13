@@ -1,4 +1,4 @@
-// Winifred Anokye - 3359322
+// Samuel Desmond Abbey Darko - 3359322
 package assignment;
 import java.util.Scanner;  
 import java.util.Arrays;
@@ -7,7 +7,7 @@ public class StandardDeviation {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         
-        int [] integer_array = new int[10];
+        int [] intArray = new int[10];
         System.out.println("\n");
         System.out.println("Enter Even Integers between 0 and 20(excluding 0): ");
         
@@ -32,12 +32,12 @@ public class StandardDeviation {
                 
             }
             System.out.println("Enter the next even integer: ");
-            integer_array[i] = inputValue;
+            intArray[i] = inputValue;
             
         }
         
         System.out.println("List Of First Even Integers between 0 and 20 : " + "\n");
-        System.out.println(Arrays.toString(integer_array));
+        System.out.println(Arrays.toString(intArray));
         System.out.print("\n" );
 
 
@@ -45,19 +45,19 @@ public class StandardDeviation {
 
         double standardDev, mean,  summation;
         int sum = 0;
-        for(int j=0; j<integer_array.length; j++){
-            sum = sum + integer_array[j];
+        for(int j=0; j<intArray.length; j++){
+            sum = sum + intArray[j];
         }
         //Mean Calculation
-        mean =  (sum / integer_array.length);
+        mean =  (sum / intArray.length);
         summation = 0;
 
         //Mean Deviation Calculation
-        for(int k=0; k<integer_array.length; k++){
-            summation +=  (Math.pow(integer_array[k] - mean, 2));
+        for(int k=0; k<intArray.length; k++){
+            summation +=  (Math.pow(intArray[k] - mean, 2));
         }
 
-        standardDev = Math.sqrt(summation/integer_array.length);
+        standardDev = Math.sqrt(summation/intArray.length);
 
 
         System.out.println("\n");
