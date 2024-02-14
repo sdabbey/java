@@ -9,7 +9,7 @@ public class StandardDeviation {
         
         int [] intArray = new int[10];
         System.out.println("\n");
-        System.out.println("Enter Even Integers between 0 and 20(excluding 0): ");
+        //System.out.println("Enter Even Integers between 0 and 20(excluding 0): ");
         
         int i;
 
