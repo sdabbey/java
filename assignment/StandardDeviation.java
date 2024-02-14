@@ -1,4 +1,4 @@
- Samuel Desmond Abbey Darko - 3359322
+// Samuel Desmond Abbey Darko - 3359322
 package assignment;
 import java.util.Scanner;  
 import java.util.Arrays;
