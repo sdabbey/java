@@ -5,6 +5,8 @@ import java.util.Arrays;
 
 public class StandardDeviation {
     public static void main(String[] args) {
+        
+        @SuppressWarnings("resource")
         Scanner input = new Scanner(System.in);
         
         int [] intArray = new int[10];

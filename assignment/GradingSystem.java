@@ -1,81 +1,139 @@
-package assignment;                            
+// Siaw Emmanuel Asante -- 3414422
 import java.util.Scanner;
+
+
+
 public class GradingSystem {
-    Boolean pass_req_one = false;
-    Boolean pass_req_two = false;
-    Boolean paid_full_fees = false;
     public static void main(String[] args) {
+        // Instantiate the Scanner class
         Scanner input = new Scanner(System.in);
 
-        GradingSystem mainObj = new GradingSystem();
+        //Declaring array variables
+        int [] indexNumbers,  midsemScores, examScores;
+        
+        System.out.println("Enter Class Size: ");
+        int class_size = input.nextInt();
+        double average_score, total_scores;
+        total_scores = 0;
 
-        // Reading in Student Assessment and Exam Score
-        System.out.println("Enter Student Exam Score: ");
-        Double exam_score = input.nextDouble();
+        indexNumbers = new int[class_size];
+        examScores = new int[class_size];
+        midsemScores = new int[class_size];
+        double [] finalScores = new double[class_size];
+        char [] grades = new char[class_size];
+        
+        double min = Double.MAX_VALUE;
+        double max = Double.MIN_VALUE;
 
-        System.out.println("Enter Student Assessment Score: ");
-        Double assessment_score = input.nextDouble();
+        int Afr, Bfr, Cfr, Dfr, Efr, Ffr;
+        Afr=Bfr=Cfr=Dfr=Efr=Ffr=0;
+        for (int i = 0; i < class_size; i++) {
+            System.out.println("Enter the Student Index Number: ");
+            indexNumbers[i] = input.nextInt();
+            
+            System.out.println("Enter the Student Mid-Semester Score: ");
+            midsemScores[i] = input.nextInt();
 
-        System.out.println("Enter Amount of Fees paid(0-100): ");
-        Double fee_amount = input.nextDouble();
+            System.out.println("Enter the Student Exam Score: ");
+            examScores[i] = input.nextInt();
+
+            
+            // Condition for Grade Calculation
+            double scaled_midsem, scaled_exam;
+            
+            scaled_midsem = 0.3 * midsemScores[i];
+            scaled_exam = 0.7 * examScores[i];
+
+            finalScores[i] = scaled_midsem + scaled_exam;
+            total_scores+=finalScores[i];
 
 
-        Double total_score = exam_score + assessment_score;
 
-        //Condition for Fee Status
-        if(fee_amount == 100){
-            mainObj.paid_full_fees = true;
-        }
-
-        //Condition for Requirement One
-        if(exam_score >= 25 && assessment_score >= 15){
-            mainObj.pass_req_one = true;
-            System.out.println("Student has passed the exam component.");
-            System.out.println("Student has passed the assessment component.");
-        }
-
-        //Condition for Requirement Two
-        if(total_score == 39){
-            if(exam_score == 25 && assessment_score == 14){
-                mainObj.pass_req_two = true;
-                System.out.println("Student has passed the exam component.");
-                System.out.println("Student has failed the assessment component.");
-            }else if(exam_score == 24 && assessment_score == 15){
-                mainObj.pass_req_two = true;
-                System.out.println("Student has failed the exam component.");
-                System.out.println("Student has passed the assessment component.");
+            
+            if(finalScores[i] >= 70){
+                grades[i] = 'A';
             }
-        }
-
-       
-        if((mainObj.pass_req_one || mainObj.pass_req_two)){
-
-            if(mainObj.paid_full_fees){
-                System.out.println("Student has passed and deserves a certificate.");
-               
-            }else{
-                System.out.println("Student has passed but has not paid fees in full.");
+            else if(finalScores[i] >=60){
+                grades[i] = 'B';
+            }
+            else if(finalScores[i] >=55){
+                grades[i] = 'C';
+            }
+            else if(finalScores[i] >=50){
+                grades[i] = 'D';
+            }
+            else if(finalScores[i] >=40){
+                grades[i] = 'E';
+            }
+            else{
+                grades[i] = 'F';
             }
             
-        }else{
-            if(exam_score >= 25){
-                System.out.println("Student has passed the exam component.");
-            }else{
-                System.out.println("Student has failed the exam component.");
+            //Min value
+            if(finalScores[i] < min){
+                min = finalScores[i];
             }
-            if(assessment_score >= 15){
-                System.out.println("Student has passed the assessment component.");
-            }else{
-                System.out.println("Student has failed the assessment component.");
+
+            //Max value
+            if(finalScores[i] > max){
+                max = finalScores[i];
             }
-            System.out.println("Student has failed and is to be repeated.");
+
+            
+          
+            
+           
+            // Grade Frequency Calculation
+            
+        
+            if(grades[i] == 'A'){
+                Afr += 1;
+            }else if(grades[i] == 'B'){
+                Bfr += 1;
+            }else if(grades[i] == 'C'){
+                Cfr += 1;
+            }else if(grades[i] == 'D'){
+                Dfr += 1;
+            }else if(grades[i] == 'E'){
+                Efr += 1;
+            }else {
+                Ffr += 1;
+            }
+
+            
         }
         
+       
+       
+        // Average Score Calculation
+        average_score = total_scores / class_size;
+
+
+
+        
+        
+        System.out.println("\n");
+        System.out.printf("|%-10s|%-10s|%-5s|%n", "Index No.", "Final Score", "Grade");
+
+        System.out.println("------------------------------");
+        for (int k = 0; k < class_size; k++) {
+            System.out.printf("|%-10s|%-11s|%-5s|%n", indexNumbers[k], finalScores[k], grades[k]);
+        }
+
+        System.out.println("\n");
+        System.out.println("The average score is " + average_score);
+        System.out.println("The maximum score is " + max);
+        System.out.println("The minimum score is " + min);
+        
+        System.out.println("\n");
+        System.out.println("Grades with frequencies:" + "\n");
+        System.out.println("Grade A had frequency of " + Afr);
+        System.out.println("Grade B had frequency of " + Bfr);
+        System.out.println("Grade C had frequency of " + Cfr);
+        System.out.println("Grade D had frequency of " + Dfr);
+        System.out.println("Grade E had frequency of " + Efr);
+        System.out.println("Grade F had frequency of " + Ffr);
+        
         input.close();
-
-
     }
-
-    
 }
-
