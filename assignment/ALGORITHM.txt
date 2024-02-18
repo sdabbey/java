@@ -1,5 +1,5 @@
-DECLARE index_numbers, midsemScores, examScores, finalScores, grades as ARRAY
-DECLARE class_size, averageScore, total_scores, Afr, Bfr, Cfr, Dfr, Efr, Ffr as INTEGERS
+DECLARE index_numbers, midsem_scores, exam_scores, final_scores, grades as ARRAY
+DECLARE class_size, average_score, total_scores, Afr, Bfr, Cfr, Dfr, Efr, Ffr as INTEGERS
 
 class_size = INPUT("Enter Class Size)
 total_scores = 0;
@@ -10,36 +10,36 @@ Afr=Bfr=Cfr=Dfr=Efr=Ffr=0
 
 FOR i=0 TO class_size STEP 1 
     index_numbers[i] = INPUT("Enter the Student Index Number")
-    midsemScores[i] = INPUT("Enter the Student Mid-Semester Exams")
-    examScores[i] = INPUT("Enter the Student Exam Score")
+    midsem_scores[i] = INPUT("Enter the Student Mid-Semester Exams")
+    exam_scores[i] = INPUT("Enter the Student Exam Score")
     
-    scaled_midsem = 0.3 * midsemScores[i]
-    scaled_exam = 0.7 * examScores[i]
+    scaled_midsem = 0.3 * midsem_scores[i]
+    scaled_exam = 0.7 * exam_scores[i]
     
-    finalScores[i] = scaled_midsem + scaled_exam
-    total_score += finalScores[i]
+    final_scores[i] = scaled_midsem + scaled_exam
+    total_scores += final_scores[i]
     
-    IF finalScores[i] >= 70 THEN 
+    IF final_scores[i] >= 70 THEN 
     	grades[i] = 'A'
-    ELSE IF finalScores[i] >=60 THEN
+    ELSE IF final_scores[i] >=60 THEN
     	grades[i] = 'B'
-    ELSE IF finalScores[i] >= 55 THEN 
+    ELSE IF final_scores[i] >= 55 THEN 
     	grades[i] = 'C'
-    ELSE IF finalScores[i] >= 50 THEN 
+    ELSE IF final_scores[i] >= 50 THEN 
     	grades[i] = 'D'
-    ELSE IF finalScores[i] >= 40 THEN
+    ELSE IF final_scores[i] >= 40 THEN
     	grades[i] = 'E'
     ELSE 
     	grades[i] = 'F'
     ENDIF
     
     //Finding Minimum and Maximum scores
-    IF finalScores[i] < min THEN 
-    	min = finalScores[i]
+    IF final_scores[i] < min THEN 
+    	min = final_scores[i]
     ENDIF
     
-    IF finalScores[i] > max THEN 
-    	max = finalScores[i]
+    IF final_scores[i] > max THEN 
+    	max = final_scores[i]
     ENDIF
     
     //Grade Frequency Calculation
@@ -59,7 +59,7 @@ FOR i=0 TO class_size STEP 1
 ENDFOR
 
 //Average Score Calculation
-averageScore = total_scores / class_size;
+average_score = total_scores / class_size;
 
 PRINT"Index No." + "Final Score" + "Grade"
 
@@ -67,7 +67,7 @@ FOR k = 0 TO class_size STEP 1
     PRINT index_numbers[k], final_score[k], grades[k]
 ENDFOR
 
-PRINT"The average score is ", averageScore
+PRINT"The average score is ", average_score
 PRINT"The maximum score is ", max
 PRINT"The minimum score is ", min
 

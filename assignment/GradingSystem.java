@@ -1,26 +1,23 @@
-// Siaw Emmanuel Asante -- 3414422
+// Samuel Desmond Abbey Darko -- 3359322
 
 import java.util.Scanner;
-
-
-
 public class GradingSystem {
     public static void main(String[] args) {
         // Instantiate the Scanner class
         Scanner input = new Scanner(System.in);
 
         //Declaring array variables
-        int [] indexNumbers,  midsemScores, examScores;
+        int [] index_numbers,  midsem_scores, exam_scores;
         
         System.out.println("Enter Class Size: ");
         int class_size = input.nextInt();
         double average_score, total_scores;
         total_scores = 0;
 
-        indexNumbers = new int[class_size];
-        examScores = new int[class_size];
-        midsemScores = new int[class_size];
-        double [] finalScores = new double[class_size];
+        index_numbers = new int[class_size];
+        exam_scores = new int[class_size];
+        midsem_scores = new int[class_size];
+        double [] final_scores = new double[class_size];
         char [] grades = new char[class_size];
         
         double min = Double.MAX_VALUE;
@@ -30,40 +27,40 @@ public class GradingSystem {
         Afr=Bfr=Cfr=Dfr=Efr=Ffr=0;
         for (int i = 0; i < class_size; i++) {
             System.out.println("Enter the Student Index Number: ");
-            indexNumbers[i] = input.nextInt();
+            index_numbers[i] = input.nextInt();
             
             System.out.println("Enter the Student Mid-Semester Score: ");
-            midsemScores[i] = input.nextInt();
+            midsem_scores[i] = input.nextInt();
 
             System.out.println("Enter the Student Exam Score: ");
-            examScores[i] = input.nextInt();
+            exam_scores[i] = input.nextInt();
 
             
             // Condition for Grade Calculation
             double scaled_midsem, scaled_exam;
             
-            scaled_midsem = 0.3 * midsemScores[i];
-            scaled_exam = 0.7 * examScores[i];
+            scaled_midsem = 0.3 * midsem_scores[i];
+            scaled_exam = 0.7 * exam_scores[i];
 
-            finalScores[i] = scaled_midsem + scaled_exam;
-            total_scores+=finalScores[i];
+            final_scores[i] = scaled_midsem + scaled_exam;
+            total_scores+=final_scores[i];
 
 
 
             
-            if(finalScores[i] >= 70){
+            if(final_scores[i] >= 70){
                 grades[i] = 'A';
             }
-            else if(finalScores[i] >=60){
+            else if(final_scores[i] >=60){
                 grades[i] = 'B';
             }
-            else if(finalScores[i] >=55){
+            else if(final_scores[i] >=55){
                 grades[i] = 'C';
             }
-            else if(finalScores[i] >=50){
+            else if(final_scores[i] >=50){
                 grades[i] = 'D';
             }
-            else if(finalScores[i] >=40){
+            else if(final_scores[i] >=40){
                 grades[i] = 'E';
             }
             else{
@@ -71,13 +68,13 @@ public class GradingSystem {
             }
             
             //Min value
-            if(finalScores[i] < min){
-                min = finalScores[i];
+            if(final_scores[i] < min){
+                min = final_scores[i];
             }
 
             //Max value
-            if(finalScores[i] > max){
-                max = finalScores[i];
+            if(final_scores[i] > max){
+                max = final_scores[i];
             }
 
             
@@ -118,7 +115,7 @@ public class GradingSystem {
 
         System.out.println("------------------------------");
         for (int k = 0; k < class_size; k++) {
-            System.out.printf("|%-10s|%-11s|%-5s|%n", indexNumbers[k], finalScores[k], grades[k]);
+            System.out.printf("|%-10s|%-11s|%-5s|%n", index_numbers[k], final_scores[k], grades[k]);
         }
 
         System.out.println("\n");
