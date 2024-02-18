@@ -1,5 +1,5 @@
 // Samuel Desmond Abbey Darko -- 3359322
-
+package assignment;
 import java.util.Scanner;
 public class GradingSystem {
     public static void main(String[] args) {
