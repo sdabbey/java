@@ -1,0 +1,1 @@
+DECLARE product_LD, product
