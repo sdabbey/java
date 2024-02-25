@@ -1,7 +1,7 @@
-//Samuel Desmond Abbey Darko -- 3359322
+//Winifred Anokye -- 3371822
 import java.util.Scanner;
 
-public class Main {
+public class Array2D3x3 {
     public static void main (String []args ){
         Scanner input = new Scanner (System.in);
         double numArr [][] = new double[3][3];

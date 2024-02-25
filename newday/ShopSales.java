@@ -1,3 +1,4 @@
+//Samuel Desmond Abbey Darko -- 3359322
 public class ShopSales {
     public static void main(String[] args) {
         int [][] hs_branch = {
