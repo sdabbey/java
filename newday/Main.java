@@ -16,14 +16,11 @@ public class Main {
                 double tempInput = input.nextDouble();
                 if(tempInput%2!=0 && tempInput > 0){
                     numArr[a][b]=tempInput;
-                    
                     element_number +=1;
                 }else{
                     System.out.println("Please enter an odd number!");
                     b--;
-                
-                }   
-                
+                }
             }
             System.out.println("\n");
         }
@@ -43,9 +40,6 @@ public class Main {
         }
         average = sum / element_number;
 
-
-       
-
         //Mean Deviation Calculation
         for(int c = 0; c<numArr.length; c++){
             for (int d = 0; d < numArr[c].length; d++) {
@@ -59,12 +53,10 @@ public class Main {
         numArr[1][0] = average;
         numArr[1][2] = Math.round(standard_dev * 100)/100;
         
-
         //Sorting Array Elements in Descending order
         int rows = numArr.length;
         int cols = numArr[0].length;
-
-        
+     
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols - 1; j++) {
                 for (int k = 0; k < cols - j - 1; k++) {
@@ -80,7 +72,6 @@ public class Main {
 
         System.out.println("Average:" + average);
         System.out.println("Standard Deviation:" + standard_dev + "\n");
-
         System.out.println("Final 2D 3x3 Array:" + "\n");
 
         //Print Array in Descending 
@@ -90,10 +81,6 @@ public class Main {
             }
             System.out.println();
         }
-
         input.close();
-    }
-
-
-    
+    }    
 }
