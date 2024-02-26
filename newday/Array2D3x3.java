@@ -1,4 +1,4 @@
-//Winifred Anokye -- 3359322
+//Samuel Desmond Abbey Darko -- 3359322
 import java.util.Scanner;
 
 public class Array2D3x3 {
