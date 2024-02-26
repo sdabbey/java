@@ -1,4 +1,4 @@
-//Winifred Anokye -- 3371822
+//Winifred Anokye -- 3359322
 import java.util.Scanner;
 
 public class Array2D3x3 {
