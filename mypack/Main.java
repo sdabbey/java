@@ -2,7 +2,7 @@
 package mypack;
 public class Main{
     
-    /*
+    
     static int addNumbers(int x, int y){
         return x + y;
     }
@@ -22,7 +22,6 @@ public class Main{
     
     int x = 5;
 
-    */
     
     static void myStaticMethod(){
         System.out.println("Static methods can be called without creating objects");
