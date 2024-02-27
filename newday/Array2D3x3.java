@@ -1,4 +1,4 @@
-//Samuel Desmond Abbey Darko -- 3359322
+//Helena Ntibim -- 3402922
 
 import java.util.Scanner;
 
