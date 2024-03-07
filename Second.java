@@ -1,3 +1,5 @@
 public class Second {
-    String name = "Samuel Desmond Abbey Darko";
+    public static void main(String[] args) {
+        System.out.println(5/2);
+    }
 }
