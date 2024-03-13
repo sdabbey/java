@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class StudentInfoApp {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Map<String, String> studentPhoneNumbers = new HashMap<>();
-        Map<Integer, Integer> holidayRatings = new HashMap<>();
+        HashMap<String, String> studentPhoneNumbers = new HashMap<>();
+        HashMap<Integer, Integer> holidayRatings = new HashMap<>();
 
         try {
             while (true) {
