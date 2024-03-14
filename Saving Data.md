@@ -42,4 +42,6 @@
 
 - The file class has methods including the following: 
     - **exists(): Example; **inf.exists()**[ Note: inf is a pointer to a file.] - This is to check that the file that is loaded exists.
-    - Java reads text files.
+
+    - **getName()**: Returns name of file.
+    
