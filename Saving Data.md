@@ -31,7 +31,7 @@
     **FileReader fr = new FileReader(inf)**
 
     //To enhance read operation, a BufferedReader is used **[Buffering is an I/O performance enhancement technique]**.
-    **BufferedREader **br = new BufferedReader(fr);**
+    **BufferedReader **br = new BufferedReader(fr);**
         String line = "";
         while((line = br.readLine()) != null){
         System.out.println(line);
@@ -40,8 +40,35 @@
     //Buffer is closed after usage.
     **br.close();**
 
+- Java reads text files.
 - The file class has methods including the following: 
     - **exists(): Example; **inf.exists()**[ Note: inf is a pointer to a file.] - This is to check that the file that is loaded exists.
 
-    - **getName()**: Returns name of file.
+    - **getName()**: Returns name of file
+
+    - **list()**: List is used to list all files and folders in a folder(directory)
+        Example: 
+            **File dir = **new File**("C://LEARN_JAVA/HANDLING FILES/DATA");
+            if(dir.exists()){
+                String[] files = dir.list();
+                for(int i = 0; i < files.length; i++){
+                    System.out.println(files[i]);
+                }
+            }
     
+    //Checkout *NullPointerException*
+
+### Reading Console Input
+- Like the Scanner class, the java.io package also contains **InputStreamReader** which enables the program to read user input from the command line
+- *InputStreamReader* is slow so there is need for *BufferedReader*
+
+    **InputStreamReader isr = new InputStreamReader(System.in);**
+    **BufferedReader br = new BufferedReader(isr);**
+
+### Writing to a file
+- *FileWriter* class is used.
+- *Buffer.write()* method and **BufferWriter* are used too.
+    **FileWriter file = **new FileWriter("C://LEARN_JAVA/HANDLING FILES/DATA");**
+        BufferedWriter buffer = new BufferedWriter(file);
+        buffer.write("Hello, this is my first text");
+
