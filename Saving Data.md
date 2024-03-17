@@ -56,7 +56,7 @@
                 }
             }
     
-  
+    //Checkout *NullPointerException*
 
 ### Reading Console Input
 - Like the Scanner class, the java.io package also contains **InputStreamReader** which enables the program to read user input from the command line
