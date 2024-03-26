@@ -1,3 +1,4 @@
+package Assignments.code8;
 // Samuel Desmond Abbey Darko -- 3359322
 import java.util.Scanner;
 import java.util.HashMap;

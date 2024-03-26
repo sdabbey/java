@@ -1,3 +1,4 @@
+package Assignments.code7;
 public class ShopSales {
     public static void main(String[] args) {
         int [][] hs_branch = {

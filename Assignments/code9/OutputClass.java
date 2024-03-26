@@ -1,4 +1,4 @@
-package OOPGrading;
+package Assignments.code9;
 
 public class OutputClass {
     public void myOutput(int size, String name[], int index_number[], char student_grade[]){

@@ -1,6 +1,6 @@
 // Samuel Desmond Abbey Darko -- 3359322
 //Grading System of a Single Student
-package Assignments;                       
+package Assignments.code2;                       
 import java.util.Scanner;
 
 public class GradingSystem1 {

@@ -1,7 +1,7 @@
 // Samuel Desmond Abbey Darko -- 3359322
 
 //Grading System of a whole class(with class size specification)
-package Assignments;
+package Assignments.code1;
 import java.util.Scanner;
 public class GradingSystem {
     public static void main(String[] args) {

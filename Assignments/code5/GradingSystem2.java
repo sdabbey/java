@@ -1,7 +1,7 @@
-//Grading System
-package mypack;
+//Grading System wit5h straight forward detail output
+package Assignments.code5;
 import java.util.Scanner;
-public class GradingSystem {
+public class GradingSystem2 {
     public static void main(String[] args) {
         System.out.println("Enter class size:");
         Scanner input = new Scanner(System.in);

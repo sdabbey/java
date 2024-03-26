@@ -1,4 +1,4 @@
-package assignment;
+package Assignments.code3;
 import java.util.Scanner;
 
 public class RatingFrequency {

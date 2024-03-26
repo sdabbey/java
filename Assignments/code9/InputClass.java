@@ -1,4 +1,4 @@
-package OOPGrading;
+package Assignments.code9;
 import java.util.Scanner;
 public class InputClass {
     int classSize;
@@ -7,7 +7,7 @@ public class InputClass {
     int [] studentScore;
 
     public void myInput(){
-        System.out.println("Enter class size");
+        System.out.println("Enter class size:");
         Scanner input = new Scanner(System.in);
 
         classSize = input.nextInt();

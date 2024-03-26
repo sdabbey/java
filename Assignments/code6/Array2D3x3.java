@@ -1,4 +1,5 @@
-//Helena Ntibim -- 3402922
+package Assignments.code6;
+// Samuel Desmond Abbey Darko -- 3359322
 
 import java.util.Scanner;
 

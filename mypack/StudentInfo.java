@@ -1,4 +1,4 @@
-//Anokye Winifred - 3371822
+// Winifred Anokye -- 3371822
 import java.util.HashMap;
 import java.util.Map;
 import java.util.InputMismatchException;

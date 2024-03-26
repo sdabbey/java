@@ -1,4 +1,4 @@
-package OOPGrading;
+package Assignments.code9;
 
 public class GradingClass {
     public char studentGrade(int score){

@@ -1,4 +1,4 @@
-DECLARE studentDetail, studentRating, holidayRatingFrequency as MAP and initialize as empty maps.
+DECLARE studentDetail, studentRating, holidayRatingFrequency as HashMap and initialize as empty maps.
 WHILE True THEN
 	OUTPUT "Enter student's name: "
 	INPUT name
