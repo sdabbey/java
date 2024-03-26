@@ -1,3 +1,4 @@
+package mypack;
 // Winifred Anokye -- 3371822
 import java.util.HashMap;
 import java.util.Map;
