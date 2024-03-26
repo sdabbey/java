@@ -13,7 +13,7 @@ public class Array2D3x3 {
         for (int a = 0; a < numArr.length; a++) {
             System.out.println("Row  " + (1+a));
             for(int b=0; b<numArr[a].length; b++){
-                System.out.println("Enter individual values for this row:");
+                // System.out.println("Enter individual values for this row:");
                 double tempInput = input.nextDouble();
                 if(tempInput%2!=0 && tempInput > 0){
                     numArr[a][b]=tempInput;

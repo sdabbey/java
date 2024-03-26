@@ -1,5 +1,8 @@
-package assignment;                       
+// Samuel Desmond Abbey Darko -- 3359322
+//Grading System of a Single Student
+package Assignments;                       
 import java.util.Scanner;
+
 public class GradingSystem1 {
     Boolean pass_req_one = false;
     Boolean pass_req_two = false;
