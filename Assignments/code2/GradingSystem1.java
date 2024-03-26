@@ -1,6 +1,8 @@
 // Samuel Desmond Abbey Darko -- 3359322
 //Grading System of a Single Student
-package Assignments.code2;                       
+package Assignments.code2;
+import java.io.FileWriter;
+import java.io.IOException;                       
 import java.util.Scanner;
 
 public class GradingSystem1 {
@@ -24,6 +26,19 @@ public class GradingSystem1 {
 
 
         Double total_score = exam_score + assessment_score;
+
+        try {
+            FileWriter writer = new FileWriter("user_input.txt");
+            writer.write("Student Details" + "\n");
+            writer.write("Exam Score: " + exam_score + "\n");
+            writer.write("Assessment Score: " + assessment_score + "\n");
+            writer.write("Fee Amount: " + fee_amount);
+
+            writer.close();
+        } catch (IOException e) {
+            System.out.println("An error occurred while saving user input to file");
+            e.printStackTrace();
+        }
 
         //Condition for Fee Status
         if(fee_amount == 100){

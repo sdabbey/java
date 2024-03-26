@@ -1,0 +1,4 @@
+Student Details
+Exam Score: 56.0
+Assessment Score: 98.0
+Fee Amount: 79.0
