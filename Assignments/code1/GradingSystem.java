@@ -3,6 +3,9 @@
 //Grading System of a whole class(with class size specification)
 package Assignments.code1;
 import java.util.Scanner;
+import java.io.FileWriter;
+import java.io.IOException;
+
 public class GradingSystem {
     public static void main(String[] args) {
         // Instantiate the Scanner class
@@ -38,6 +41,7 @@ public class GradingSystem {
             exam_scores[i] = input.nextInt();
 
             
+
             // Condition for Grade Calculation
             double scaled_midsem, scaled_exam;
             
@@ -108,7 +112,27 @@ public class GradingSystem {
         // Average Score Calculation
         average_score = total_scores / class_size;
 
-
+        try {
+            FileWriter writer = new FileWriter("class_grades.txt");
+            writer.write("Index No.\tFinal Score\tGrade\n");
+            for (int j = 0; j < class_size; j++) {
+                writer.write(index_numbers[j] + "\t" + final_scores[j] + "\t" + grades[j] + "\n");
+            }
+            writer.write("\nAverage Score: " + average_score + "\n");
+            writer.write("Maximum Score: " + max + "\n");
+            writer.write("Minimum Score: " + min + "\n\n");
+            writer.write("Grade Frequencies:\n");
+            writer.write("Grade A: " + Afr + "\n");
+            writer.write("Grade B: " + Bfr + "\n");
+            writer.write("Grade C: " + Cfr + "\n");
+            writer.write("Grade D: " + Dfr + "\n");
+            writer.write("Grade E: " + Efr + "\n");
+            writer.write("Grade F: " + Ffr + "\n");
+            writer.close();
+        } catch (IOException e) {
+            System.out.println("An error occured while saving user input to file.");
+            e.printStackTrace();
+        }
 
         
         
